@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gowthami Priya - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background: linear-gradient(to right, #6366f1, #4f46e5);
+      color: white;
+      padding: 40px 20px;
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid white;
+      object-fit: cover;
+      margin-top: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 5px 0;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .tags span {
+      display: inline-block;
+      background: #4f46e5;
+      color: white;
+      padding: 6px 12px;
+      margin: 6px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    footer {
+      background: #f1f1f1;
+      padding: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Gowthami" class="profile-img">
+    <h1>K. Gowthami Priya</h1>
+    <p>3rd Year B.Tech | AIML Department</p>
+    <p>AI • Web • Research • FastAPI</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I am passionate about AI, deep learning, and building real-world applications from web to brainwave analysis.</p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <ul style="text-align:left; list-style: none; padding-left: 0;">
+      <li><strong>🔧 Interactive Resume Builder:</strong> Auto-resume from LinkedIn & GitHub</li>
+      <li><strong>🛡️ Women Safety Threat Detection:</strong> Real-time AI surveillance</li>
+      <li><strong>🧠 GITGAN EEG Classifier:</strong> Subject-adaptive motor imagery analysis</li>
+      <li><strong>🩻 Medical Image Diagnosis API:</strong> FastAPI + ResNet50 for TB/Pneumonia detection</li>
+    </ul>
+  </section>
+
+  <section class="tags">
+    <h2>Skills</h2>
+    <span>Python</span><span>FastAPI</span><span>EEG</span><span>Deep Learning</span>
+    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git</span>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: gowthami@gmail.com</p>
+    <p>GitHub: <a href="#" target="_blank">github.com/gowthami-projects</a></p>
+    <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/gowthami</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Gowthami Priya. Made with ❤️ using Flask & HTML.
+  </footer>
+</body>
+</html>
